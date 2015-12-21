@@ -3,7 +3,13 @@ var watch     = require('gulp-watch');
 var webserver = require('gulp-webserver');
 var babel     = require('gulp-babel');
 
-gulp.task('watch', function () {
+gulp.task('styles', function() {
+    return gulp.src('src/**/*.css')
+        .pipe(watch('src/**/*.css'))
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('react', function () {
     return gulp.src('src/**/*.jsx')
         .pipe(watch('src/**/*.jsx'))
         .pipe(babel({
@@ -11,6 +17,8 @@ gulp.task('watch', function () {
         }))
         .pipe(gulp.dest('dist'));
 });
+
+gulp.task('watch', ['styles', 'react']);
 
 gulp.task('webserver', function() {
     return gulp.src('')
