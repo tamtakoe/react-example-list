@@ -12,7 +12,7 @@ TODO: architecture (flux, routing, build...), flex-box.
     npm install
     npm install -g gulp
 
-## Start (develop and build)
+## Start
 
     gulp
     open "http://localhost:8000"
