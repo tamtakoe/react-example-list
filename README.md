@@ -1,6 +1,8 @@
 # react-example-list
 List of items on ReactJS
 
+Demo: http://tamtakoe.github.io/react-example-list/
+
 ## Install
 
     npm install
