@@ -1,0 +1,52 @@
+.row {
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+
+.col {
+    padding: 0;
+}
+
+.background {
+    overflow: hidden;
+    margin: 5px;
+    height: 400px;
+}
+
+.background-image {
+    width: 100%;
+}
+
+.card {
+    position: absolute;
+    overflow: hidden;
+    padding: 20px;
+    height: 400px;
+}
+
+.card-title,
+.card-description {
+    padding: 5px;
+    background: rgba(255,255,51,0.8);
+}
+
+.editor {
+    position: absolute;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    background-clip: content-box;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    z-index: 1000;
+}
+
+.editor:hover {
+    opacity: 1;
+}
+
+.editor-panel {
+    padding: 15px;
+}
